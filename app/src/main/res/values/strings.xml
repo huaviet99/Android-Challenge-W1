@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Android Challenge W1</string>
+    <string name="sign_in"><u>Sign In</u></string>
+
 </resources>
