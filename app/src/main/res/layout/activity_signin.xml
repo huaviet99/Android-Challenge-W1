@@ -161,11 +161,12 @@
         android:fontFamily="@font/sofia_pro_medium"
         android:text="@string/activity_sign_in_sign_in_with"
         android:textColor="#5B5B5E"
-        android:layout_marginBottom="80dp"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_facebook"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintTop_toBottomOf="@+id/tv_no_account" />
 
     <View
         android:id="@+id/view_left_bar"
@@ -191,7 +192,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_facebook"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_button"
         android:fontFamily="@font/sofia_pro_medium"
