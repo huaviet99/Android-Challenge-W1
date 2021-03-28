@@ -1,5 +1,42 @@
 <resources>
     <string name="app_name">Android Challenge W1</string>
+    <string name="skip">Skip</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="food_hub">Food Hub</string>
+    <string name="your_favourite_food">Your favourite foods delivered<br></br>fast at your door.</string>
     <string name="sign_in"><u>Sign In</u></string>
+    <string name="browse_your_menu">Browse your menu <br></br>and order directly</string>
+    <string name="our_app_can_send">Our app can send you everywhere, even<br></br>space. For only $2.99 per month</string>
+    <string name="login">Login</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="your_email">Your E-mail</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in_with">Sign in with</string>
+    <string name="sign_up_with">Sign up with</string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="google">GOOGLE  </string>
+    <string name="your_full_name">Your full name</string>
+    <string name="i_dont_receive_a_code">I don&apos;t receive a code!</string>
+    <string name="please_resend">Please resend</string>
+    <string name="please_type_the_verification">Please type the verification code sent to<br></br>prelookstudio@gmail.com</string>
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2<br></br>ABC</string>
+    <string name="number_three">3<br></br>DEF</string>
+    <string name="number_four">4<br></br>GHI</string>
+    <string name="number_five">5<br></br>JKL</string>
+    <string name="number_six">6<br></br>MNO</string>
+    <string name="number_seven">7<br></br>PQRS</string>
+    <string name="number_eight">8<br></br>TUV</string>
+    <string name="number_nine">9<br></br>WXYZ</string>
 
 </resources>
+    <!-- HTML ENTITIES
+    & with &amp;
+    > with &gt;
+    < with &lt;
+    " with &quot;, &ldquo; or &rdquo;
+    ' with &apos;, &lsquo; or &rsquo;
+    -->
