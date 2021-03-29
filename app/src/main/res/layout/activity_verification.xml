@@ -8,7 +8,7 @@
 
     <ImageButton
 
-        android:id="@+id/button4"
+        android:id="@+id/btn_skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/mg_28dp"
@@ -23,7 +23,7 @@
 
 
     <com.chaos.view.PinView
-        android:id="@+id/secondPinView"
+        android:id="@+id/view_pin_code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -34,6 +34,7 @@
         app:itemRadius="@dimen/pv_pin_view_item_radius"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
         app:layout_constraintTop_toBottomOf="@+id/textView12"
         app:lineColor="@color/dove_gray"
         app:lineWidth="0.1dp" />
@@ -48,10 +49,27 @@
         android:text="Verification Code"
         android:textColor="@color/black"
         android:textSize="@dimen/size_36.41sp"
+=======
+        app:layout_constraintTop_toBottomOf="@+id/tv_verification_message"
+        app:lineColor="#707070"
+        app:lineWidth="0.1dp" />
+
+    <TextView
+        android:id="@+id/tv_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/sofia_pro_semi_bold"
+        android:text="@string/activity_verification_title"
+        android:textColor="#000000"
+        android:textSize="36.41sp"
+>>>>>>> master
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+<<<<<<< HEAD
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,19 +80,40 @@
         android:textColor="@color/dove_gray"
         android:textSize="@dimen/size_14sp"
         app:layout_constraintEnd_toEndOf="@+id/secondPinView"
+=======
+        android:id="@+id/tv_no_receive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sofia_pro_medium"
+        android:lines="2"
+        android:text="@string/activity_verification_dont_receive_code"
+        android:textColor="#707070"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/view_pin_code"
+>>>>>>> master
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondPinView" />
+        app:layout_constraintTop_toBottomOf="@+id/view_pin_code" />
 
     <TextView
+<<<<<<< HEAD
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/mg_5dp"
         android:layout_marginTop="@dimen/mg_20dp"
+=======
+        android:id="@+id/tv_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+>>>>>>> master
         android:clickable="true"
         android:focusable="true"
         android:fontFamily="@font/sofia_pro_medium"
         android:lines="2"
+<<<<<<< HEAD
         android:text="@string/please_resend"
         android:textColor="@color/persimmon"
         android:textSize="@dimen/size_14sp"
@@ -90,9 +129,26 @@
         android:textColor="@color/manatee"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
+=======
+        android:text="@string/activity_verification_please_resend"
+        android:textColor="@color/orange"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_no_receive"
+        app:layout_constraintTop_toBottomOf="@+id/view_pin_code" />
+
+    <TextView
+        android:id="@+id/tv_verification_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sofia_pro_regular"
+        android:text="@string/activity_verification_message"
+        android:textColor="#9796A1"
+        app:layout_constraintStart_toStartOf="@+id/tv_verification"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verification" />
+>>>>>>> master
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/background_gray"
         android:layout_width="match_parent"
         android:layout_height="258dp"
         android:layout_marginBottom="@dimen/mg_4dp"
@@ -101,31 +157,52 @@
         tools:layout_editor_absoluteX="16dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button12"
+        android:id="@+id/btn_one"
         android:layout_width="0dp"
         android:layout_height="0dp"
+<<<<<<< HEAD
         android:layout_marginStart="@dimen/mg_5dp"
         android:fontFamily="@font/sf_prodisplay_regular"
         android:text="@string/number_one"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintEnd_toStartOf="@+id/button5"
+=======
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/activity_verification_one_button"
+        android:textColor="#000000"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btn_five"
+        app:layout_constraintEnd_toStartOf="@+id/btn_two"
+>>>>>>> master
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        app:layout_constraintTop_toTopOf="@+id/background_gray" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button7"
+        android:id="@+id/btn_four"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginStart="@dimen/mg_5dp"
         android:fontFamily="@font/sf_prodisplay_regular"
         android:text="@string/number_four"
         android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/button8"
+=======
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/activity_verification_four_button"
+
+        android:textColor="#000000"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btn_five"
+>>>>>>> master
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button8" />
+        app:layout_constraintTop_toTopOf="@+id/btn_five" />
 
     <com.google.android.material.button.MaterialButton
+<<<<<<< HEAD
         android:id="@+id/button10"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -134,13 +211,25 @@
         android:text="@string/number_seven"
         android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/button11"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button11"
+=======
+        android:id="@+id/btn_seven"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/activity_verification_seven_button"
+        android:textColor="#000000"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btn_eight"
+>>>>>>> master
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_five" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_eight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginHorizontal="@dimen/mg_5dp"
         android:fontFamily="@font/sf_prodisplay_regular"
         android:text="@string/number_eight"
@@ -148,11 +237,23 @@
         app:layout_constraintEnd_toStartOf="@+id/button13"
         app:layout_constraintStart_toEndOf="@id/button10"
         app:layout_constraintTop_toBottomOf="@+id/button8" />
+=======
+        android:layout_marginHorizontal="5dp"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/activity_verification_eight_button"
+        android:textColor="#000000"
+        app:backgroundTint="@color/white"
+
+        app:layout_constraintEnd_toStartOf="@+id/btn_nine"
+        app:layout_constraintStart_toEndOf="@id/btn_seven"
+        app:layout_constraintTop_toBottomOf="@+id/btn_five" />
+>>>>>>> master
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button14"
+        android:id="@+id/btn_zero"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginHorizontal="@dimen/mg_5dp"
         android:fontFamily="@font/sf_prodisplay_regular"
         android:text="@string/number_zero"
@@ -168,26 +269,53 @@
         android:layout_marginEnd="@dimen/mg_5dp"
         android:src="@drawable/image_exclude"
         app:layout_constraintBottom_toBottomOf="@+id/button14"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button14"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
+=======
+        android:layout_marginHorizontal="5dp"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/activity_verification_zero_button"
+        android:textColor="#000000"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/btn_remove"
+        app:layout_constraintStart_toStartOf="@+id/btn_eight"
+        app:layout_constraintTop_toBottomOf="@+id/btn_eight" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button13"
+    <ImageButton
+        android:id="@+id/btn_remove"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/image_exclude"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_zero"
+>>>>>>> master
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_zero"
+        app:layout_constraintTop_toBottomOf="@+id/btn_eight" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_nine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginEnd="@dimen/mg_5dp"
         android:fontFamily="@font/sf_prodisplay_regular"
         android:text="@string/number_nine"
         android:textColor="@color/black"
+=======
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/activity_verification_nine_button"
+        android:textColor="#000000"
+        app:backgroundTint="@color/white"
+>>>>>>> master
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/button11"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintStart_toEndOf="@id/btn_eight"
+        app:layout_constraintTop_toBottomOf="@+id/btn_six" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button8"
+        android:id="@+id/btn_five"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginHorizontal="@dimen/mg_5dp"
         android:fontFamily="@font/sf_prodisplay_regular"
         android:text="@string/number_five"
@@ -195,23 +323,42 @@
         app:layout_constraintEnd_toStartOf="@+id/button9"
         app:layout_constraintStart_toEndOf="@id/button7"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
+=======
+        android:layout_marginHorizontal="5dp"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/activity_verification_five_button"
+        android:textColor="#000000"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btn_six"
+        app:layout_constraintStart_toEndOf="@id/btn_four"
+        app:layout_constraintTop_toBottomOf="@+id/btn_two" />
+>>>>>>> master
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button9"
+        android:id="@+id/btn_six"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginEnd="@dimen/mg_5dp"
         android:fontFamily="@font/sf_prodisplay_regular"
         android:text="@string/number_six"
         android:textColor="@color/black"
+=======
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/activity_verification_six_button"
+        android:textColor="#000000"
+        app:backgroundTint="@color/white"
+>>>>>>> master
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/button8"
-        app:layout_constraintTop_toTopOf="@+id/button8" />
+        app:layout_constraintStart_toEndOf="@id/btn_five"
+        app:layout_constraintTop_toTopOf="@+id/btn_five" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button5"
+        android:id="@+id/btn_two"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginHorizontal="@dimen/mg_5dp"
         android:fontFamily="@font/sf_prodisplay_regular"
         android:text="@string/number_two"
@@ -230,8 +377,32 @@
         android:text="@string/number_three"
         android:textColor="@color/black"
         android:textSize="@dimen/size_14sp"
+=======
+        android:layout_marginHorizontal="5dp"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/activity_verification_two_button"
+        android:textColor="#000000"
+
+        android:textSize="14sp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btn_three"
+        app:layout_constraintStart_toEndOf="@id/btn_one"
+        app:layout_constraintTop_toTopOf="@+id/background_gray" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_three"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/sf_prodisplay_regular"
+        android:text="@string/activity_verification_three_button"
+        android:textColor="#000000"
+
+        android:textSize="14sp"
+        app:backgroundTint="@color/white"
+>>>>>>> master
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/button5"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        app:layout_constraintStart_toEndOf="@id/btn_two"
+        app:layout_constraintTop_toTopOf="@+id/background_gray" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

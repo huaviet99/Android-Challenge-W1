@@ -7,6 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFFFF</color>
+<<<<<<< HEAD
     <!--    color text-->
     <color name="big_stone">#131A38</color>
     <color name="shuttle_gray">#616772</color>
@@ -20,4 +21,9 @@
     <color name="nobel">#B3B3B3</color>
     <color name="bg_button_tint">#4DFFFFFF</color>
     <color name="mischka">#D2D5DB</color>
+=======
+
+    <color name="orange">#FE724C</color>
+
+>>>>>>> master
 </resources>
