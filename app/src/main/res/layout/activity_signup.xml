@@ -62,7 +62,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="@string/activity_sign_up_full_name_hint"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_full_name">
@@ -70,7 +71,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/sofia_pro_medium" />
+            android:fontFamily="@font/sofia_pro_medium"
+            android:hint="@string/activity_sign_up_full_name_hint" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -81,14 +83,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="@string/activity_sign_up_email_hint"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/sofia_pro_medium" />
+            android:fontFamily="@font/sofia_pro_medium"
+            android:hint="@string/activity_sign_up_email_hint" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -98,15 +102,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="@string/activity_sign_up_password"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_password">
+        app:layout_constraintTop_toBottomOf="@+id/tv_password"
+        app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/sofia_pro_medium"
+            android:hint="@string/activity_sign_up_password"
             android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -171,8 +178,8 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_facebook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.8"
-        app:layout_constraintTop_toBottomOf="@+id/tv_have_account" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_have_account"
+        app:layout_constraintVertical_bias="0.8" />
 
     <View
         android:id="@+id/view_left_bar"
@@ -198,35 +205,37 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_facebook"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_button"
         android:fontFamily="@font/sofia_pro_medium"
         android:paddingHorizontal="30dp"
         android:paddingVertical="10dp"
         android:text="@string/facebook_button"
-        app:backgroundTint="@color/white"
         android:textColor="#000000"
+        app:backgroundTint="@color/white"
         app:icon="@drawable/icon_facebook"
         app:iconGravity="textStart"
         app:iconTint="@null"
+        app:layout_constraintEnd_toStartOf="@id/btn_google"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/view_left_bar" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_google"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_button"
         android:fontFamily="@font/sofia_pro_medium"
         android:paddingHorizontal="30dp"
         android:paddingVertical="10dp"
+        android:layout_marginStart="10dp"
         android:text="@string/google_button"
         android:textColor="#000000"
+        app:backgroundTint="@color/white"
         app:icon="@drawable/icon_google"
         app:iconGravity="textStart"
         app:iconTint="@null"
-        app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/view_right_bar"
         app:layout_constraintHorizontal_bias="1.0"
