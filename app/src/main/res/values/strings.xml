@@ -38,10 +38,11 @@
     <string name="activity_sign_in_sign_in_with">Sign in with</string>
 
     <string name="activity_verification_title">Verification Code</string>
+    <string name="activity_verification_space">&#160;&#160;&#160;&#160;&#160;</string>
+
     <string name="activity_verification_message">Please type the verification code sent to\nprelookstudio@gmail.com</string>
     <string name="activity_verification_dont_receive_code">I don\'t receive a code!</string>
     <string name="activity_verification_please_resend">Please resend</string>
-
     <string name="activity_verification_one_button">1</string>
     <string name="activity_verification_two_button">2\nABC</string>
     <string name="activity_verification_three_button">3\nDEF</string>
