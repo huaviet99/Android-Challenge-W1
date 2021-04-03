@@ -70,6 +70,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_email">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/sofia_pro_medium"
@@ -91,9 +92,11 @@
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/sofia_pro_medium"
+            android:inputType="textEmailAddress"
             android:hint="@string/activity_sign_in_password" />
 
     </com.google.android.material.textfield.TextInputLayout>
